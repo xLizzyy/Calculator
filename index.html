@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Calculadora Basica </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="calculadora">
+        <form name="calculator" >
+            <input type="textfield" id="resultado" name="ans" value="" readonly>
+            <div class="botones">
+                
+            <input class="boton-clear" type="reset" value="C">
+            <input class="boton-operador" type="button" value="/" onclick="document.calculator.ans.value+='/'">
+            <input class="boton-operador" type="button" value="x" onclick="document.calculator.ans.value+='*'">
+            <input class="boton-operador" type="button" value="-" onclick="document.calculator.ans.value+='-'">
+            
+            <input class="numerosito" type="button" value="7" onclick="document.calculator.ans.value+='7'">
+            <input class="numerosito" type="button" value="8" onclick="document.calculator.ans.value+='8'">
+            <input class="numerosito" type="button" value="9" onclick="document.calculator.ans.value+='9'">
+            <input class="boton-operador" type="button" value="+" onclick="document.calculator.ans.value+='+'">
+            
+            <input class="numerosito" type="button" value="4" onclick="document.calculator.ans.value+='4'">
+            <input class="numerosito" type="button" value="5" onclick="document.calculator.ans.value+='5'">
+            <input class="numerosito" type="button" value="6" onclick="document.calculator.ans.value+='6'">
+            <input class="boton-igual" type="button" value="=" onclick="calcular()">
+            
+            <input class="numerosito" type="button" value="1" onclick="document.calculator.ans.value+='1'">
+            <input class="numerosito" type="button" value="2" onclick="document.calculator.ans.value+='2'">
+            <input class="numerosito" type="button" value="3" onclick="document.calculator.ans.value+='3'">
+            <input class="numerosito" type="button" value="0" onclick="document.calculator.ans.value+='0'">
+        </div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
